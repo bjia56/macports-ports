@@ -32,7 +32,7 @@ build.cmd           tool/cosmocc/package.sh
 build.target
 
 destroot {
-    xinstall -m 755 ${worksrcpath}/cosmocc ${destroot}${prefix}/cosmocc
+    file copy ${worksrcpath}/cosmocc ${destroot}${prefix}/cosmocc
     file copy ${filespath}/launcher ${destroot}${prefix}/bin/cosmocc
     foreach f [glob -directory ${worksrcpath}/cosmocc *cosmo*] {
         if {$f != cosmocc} {
