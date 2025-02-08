@@ -34,7 +34,7 @@ build.target
 destroot {
     file copy ${worksrcpath}/cosmocc ${destroot}${prefix}/cosmocc
     file copy ${filespath}/launcher ${destroot}${prefix}/bin/cosmocc
-    foreach f [glob -directory ${worksrcpath}/cosmocc *cosmo*] {
+    foreach f [glob -directory ${worksrcpath}/cosmocc/bin *cosmo*] {
         if {$f != cosmocc} {
             file link --symbolic ${destroot}${prefix}/bin/${f} cosmocc
         }
