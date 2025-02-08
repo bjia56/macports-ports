@@ -24,7 +24,7 @@ distname            cosmopolitan-${github.version}
 checksums           rmd160  d38bb6047a972e472d1359cbfdb9c78aad3e6880 \
                     sha256  e466106b18064e0c996ef64d261133af867bccd921ad14e54975d89aa17a8717 \
                     size    44058183
-patchfiles          package.sh.diff
+patchfiles          package.sh.diff download-cosmocc.sh.diff
 
 use_configure       no
 depends_build       port:gmake
